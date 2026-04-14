@@ -1,6 +1,7 @@
 # Portfolio
 
 Welcome to my personal portfolio project!
+This website doubles as my resume.
 
 ## Overview
 
