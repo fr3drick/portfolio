@@ -15,7 +15,8 @@ import {
   Search,
   CheckCircle2,
   Layers,
-  Activity
+  Activity,
+  Cloud
 } from 'lucide-react';
 
 const Header = () => (
@@ -173,7 +174,9 @@ const Skills = () => {
     { name: "SQL (MSSQL, Oracle, MySQL)", category: "Database", icon: <Database size={20} /> },
     { name: "Manual Testing & reporting", category: "Functional", icon: <Search size={20} /> },
     { name: "Black Box Testing", category: "Functional", icon: <Search size={20} /> },
-    { name: "Agile Methodologies", category: "Process", icon: <CheckCircle2 size={20} /> }
+    { name: "Agile Methodologies", category: "Process", icon: <CheckCircle2 size={20} /> },
+    { name: "Linux", category: "DevOps", icon: <Terminal size={20} /> },
+    { name: "Cloud (AWS, Azure)", category: "DevOps", icon: <Cloud size={20} /> }
   ];
 
   return (
