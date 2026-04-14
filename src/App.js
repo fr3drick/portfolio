@@ -131,16 +131,17 @@ const Experience = () => {
 
 const Certifications = () => {
   const certs = [
-    "Certified Tester Advanced Level - Test Analyst, ISTQB",
-    "Certified Tester Foundation Level, ISTQB",
+    { name: "Certified Tester Advanced Level - Test Analyst, ISTQB", link: "https://atsqa.org/certified-testers/profile/4fbd62c084374414a1c4b6c0d78f1754" },
+    { name: "Certified Tester Foundation Level, ISTQB", link: "https://atsqa.org/certified-testers/profile/4fbd62c084374414a1c4b6c0d78f1754" },
     "AWS Certified Cloud Practitioner",
-    "Microsoft Certified Azure Developer Associate AZ204",
+    { name: "Microsoft Certified Azure Developer Associate AZ204", link: "https://learn.microsoft.com/en-us/users/91244425/credentials/728fe088996a4f00" },
+    { name: "Microsoft Certified Azure DevOps Engineer Expert AZ400", link: "https://learn.microsoft.com/api/credentials/share/en-us/91244425/4CBEE798725B537A" },
     "Certificate in IT, British Computer Society",
-    "Microsoft Certified Azure Fundamentals AZ900",
-    "Microsoft Certified Azure AI Fundamentals AI900",
-    "Microsoft Certified Azure Data Fundamentals DP900",
+    { name: "Microsoft Certified Azure Fundamentals AZ900", link: "https://www.credly.com/badges/4d5bf5b9-b09c-4059-a9fe-0ce1c6d89cbf" },
+    { name: "Microsoft Certified Azure AI Fundamentals AI900", link: "https://www.credly.com/badges/bfa935e9-09d6-4046-9240-04d19ad21a55" },
+    { name: "Microsoft Certified Azure Data Fundamentals DP900", link: "https://www.credly.com/badges/ed4b70f8-8bc3-4181-80fe-f376d1a94e20" },
     "Associate Member, Chartered Institute of Bankers Nigeria",
-    "IBM - Enterprise Design Thinking Practitioner"
+    { name: "IBM - Enterprise Design Thinking Practitioner", link: "https://www.credly.com/badges/aeed950a-53ef-48f4-b607-b56eea150c4a" }
   ];
 
   return (
@@ -151,7 +152,7 @@ const Certifications = () => {
           {certs.map((cert, index) => (
             <div key={index} className="cert-card">
               <Award className="cert-icon" size={24} />
-              <p>{cert}</p>
+              {typeof cert === 'string' ? <p>{cert}</p> : <a href={cert.link} target="_blank" rel="noopener noreferrer">{cert.name}</a>}
             </div>
           ))}
         </div>
@@ -197,17 +198,20 @@ const Projects = () => {
     {
       title: "Selenium Test Automation Solution",
       tech: "Selenium, Java, Maven, TestNG",
-      desc: "Robust automation framework for web application testing."
+      desc: "Robust automation framework for web application testing.",
+      link: "https://github.com/fr3drick/Selenium_Framework"
     },
     {
       title: "Zipopotamus API Automation",
       tech: "RestAssured, TestNG, Maven",
-      desc: "Automated test suite for zip code lookup API services."
+      desc: "Automated test suite for zip code lookup API services.",
+      link: "https://github.com/fr3drick/Zippopotamus-RestAssured"
     },
     {
       title: "JMeterCI",
       tech: "JMeter, GitHub Actions",
-      desc: "Performance testing integrated into CI/CD pipelines."
+      desc: "Performance testing integrated into CI/CD pipelines.",
+      link: "https://github.com/fr3drick/jmeterCI"
     },
     {
       title: "FERN Payment Gateway",
@@ -225,7 +229,13 @@ const Projects = () => {
             <div key={index} className="project-card">
               <div className="project-header">
                 <h3>{project.title}</h3>
-                <ExternalLink size={20} />
+                {project.link ? (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink size={20} />
+                  </a>
+                ) : (
+                  <ExternalLink size={20} />
+                )}
               </div>
               <p className="project-tech">{project.tech}</p>
               <p className="project-desc">{project.desc}</p>
