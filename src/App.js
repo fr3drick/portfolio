@@ -218,8 +218,9 @@ const Projects = () => {
     },
     {
       title: "FERN Payment Gateway",
-      tech: "Collection solution",
-      desc: "Automated testing for secure payment processing systems."
+      tech: "Payment gateway",
+      desc: "Automated testing for secure payment processing systems.",
+      link: "https://fernng.com/"
     }
   ];
 
