@@ -217,6 +217,12 @@ const Projects = () => {
       link: "https://github.com/fr3drick/jmeterCI"
     },
     {
+      title: "NewmanCI",
+      tech: "Newman, Postman, GitHub Actions",
+      desc: "API test automation integrated into CI/CD pipelines.",
+      link: "https://github.com/fr3drick/newmanCI"
+    },
+    {
       title: "FERN Payment Gateway",
       tech: "Payment gateway",
       desc: "Automated testing for secure payment processing systems.",
