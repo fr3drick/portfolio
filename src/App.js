@@ -134,7 +134,7 @@ const Certifications = () => {
   const certs = [
     { name: "Certified Tester Advanced Level - Test Analyst, ISTQB", link: "https://atsqa.org/certified-testers/profile/4fbd62c084374414a1c4b6c0d78f1754" },
     { name: "Certified Tester Foundation Level, ISTQB", link: "https://atsqa.org/certified-testers/profile/4fbd62c084374414a1c4b6c0d78f1754" },
-    "AWS Certified Cloud Practitioner",
+    { name: "AWS Certified Cloud Practitioner", link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/07d681e6e0ab4f04b417400bcad6bc53" },
     { name: "Microsoft Certified Azure Developer Associate AZ204", link: "https://learn.microsoft.com/en-us/users/91244425/credentials/728fe088996a4f00" },
     { name: "Microsoft Certified Azure DevOps Engineer Expert AZ400", link: "https://learn.microsoft.com/api/credentials/share/en-us/91244425/4CBEE798725B537A" },
     "Certificate in IT, British Computer Society",
