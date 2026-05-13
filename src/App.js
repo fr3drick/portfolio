@@ -227,6 +227,12 @@ const Projects = () => {
       tech: "Payment gateway",
       desc: "Automated testing for secure payment processing systems.",
       link: "https://fernng.com/"
+    },
+    {
+      title: "Portfolio",
+      tech: "Oracle cloud, React, ubuntu linux, GitHub webhook",
+      desc: "Portfolio website for Fredrick Irubor",
+      link: "https://github.com/fr3drick/portfolio"
     }
   ];
 
