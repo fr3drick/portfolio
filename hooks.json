@@ -1,7 +1,7 @@
 [
   {
     "id": "redeploy-portfolio",
-    "execute-command": "$HOME/portfolio/scripts/redeploy-portfolio.sh",
+    "execute-command": "./scripts/redeploy-portfolio.sh",
     "command-working-directory": "$HOME/portfolio",
     "response-message": "Executing portfolio redeploy..."
   }
